@@ -1,0 +1,476 @@
+$background_dark: #445161;
+$background_white: #ffffff;
+$background_grey: #f5f5f5;
+
+@mixin h2_dark {
+    font-family: Arial;
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    color: $background_dark;
+
+}
+
+@mixin h2_white {
+    font-family: Arial;
+    font-size: 1.875em;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    color: $background_white;
+}
+
+@mixin h3_dark {
+    color: $background_dark;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: left;
+    font-family: Arial;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: Arial;
+    height: 100%;
+}
+
+header {
+    display: block;
+    background: $background_dark;
+    padding: 50px;
+    height: 100%;
+    min-height: 250px;
+    overflow: auto;
+
+    .product_name {
+        display: block;
+        float: left;
+        width: 50%;
+
+        h1 {
+            margin: 0;
+            margin-top: 0;
+            font-family: Arial;
+            font-size: 3.75em;
+            font-weight: 400;
+            text-shadow: 0px 1px 0px #0000004d;
+            color: $background_white;
+        }
+
+    }
+
+    ul {
+        list-style-image: url('../img/icon.png');
+        display: block;
+        float: left;
+        color: $background_white;
+        width: 100%;
+        max-height: 400px;
+        padding-top: 1.25em;
+        clear: both;
+
+        li {
+            font-family: Arial;
+            font-size: 1.25em;
+            font-weight: 400;
+            line-height: 1.8;
+            text-align: left;
+            text-shadow: 0px 1px 0px #0000004d;
+            font-family: Arial;
+        }
+    }
+
+    .img_product {
+        display: block;
+        float: right;
+        max-width: 100%;
+        height: auto;
+        min-width: 469px;
+        min-height: 214px;
+        margin-top: 30px;
+    }
+}
+
+.about_your_product {
+    padding: 50px;
+    display: inline-block;
+
+    .about_your_product_text {
+        float: left;
+        width: 50%;
+    }
+
+    h2 {
+        @include h2_dark();
+        margin-top: 0;
+    }
+
+    p {
+        font-family: Arial;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        color: $background_dark;
+        background-color: $background_white;
+    }
+
+    video {
+        background-color: $background_dark;
+        float: right;
+        min-width: 430px;
+    }
+}
+
+.dignity_product {
+    background-color: #f5f5f5;
+    padding: 50px;
+    height: 100%;
+    overflow: scroll;
+
+    h2 {
+        @include h2_dark();
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .dignity_product_box {
+        width: 50%;
+        float: left;
+
+        ul {
+            list-style: none;
+            display: block;
+            color: $background_dark;
+            clear: both;
+
+            li {
+                font-family: Arial;
+                font-size: 1em;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                vertical-align: top;
+                clear: both;
+                position: relative;
+                margin-bottom: 35px;
+            }
+
+        }
+
+        ul ::before {
+            content: url("../img/plus_icon.png"); //замена маркера в списке на картинку
+            display: block;
+            position: absolute;
+            left: -42px;
+            top: 5px;
+        }
+    }
+
+}
+
+.scrinshots {
+    background-color: $background_white;
+    padding: 50px;
+    height: 100%;
+    overflow: scroll;
+
+    h2 {
+        @include h2_dark();
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    figure {
+        width: 48%;
+        display: block;
+        float: left;
+        margin: 0px 23px 30px 0;
+
+        img {
+            display: block;
+            float: left;
+            margin-right: 10px;
+        }
+
+        figcaption {
+            h3 {
+                @include h3_dark();
+                margin: 0;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-family: Arial;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: left;
+                color: $background_dark;
+                background-color: $background_white;
+            }
+        }
+    }
+}
+
+.reviews {
+    background-color: #f5f5f5;
+    padding: 50px;
+    height: 100%;
+    overflow: scroll;
+
+    h2 {
+        @include h2_dark();
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .reviews_details_box {
+        width: 45%;
+        float: left;
+        padding: 0 32px 60px 16px;
+        position: relative;
+
+        .reviews_details_box_img {
+            border-radius: 50%;
+            background-color: $background_dark;
+            width: 75px;
+            height: 75px;
+            float: left;
+        }
+
+        .reviews_details_box_text {
+            position: absolute;
+            left: 120px;
+            background-color: #ececec;
+            border-radius: 5px;
+            padding-left: 12px;
+            padding-right: inherit;
+
+            h4 {
+                font-family: Arial;
+                color: #989898;
+                font-size: 0.875em;
+                font-weight: 400;
+                line-height: 1.286;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-family: Arial;
+                background-color: #ececec;
+                color: $background_dark;
+                font-size: 0.875em;
+                font-style: italic;
+                line-height: 1.286;
+                text-align: left;
+            }
+        }
+
+        .block {
+            background: green;
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            color: #fff;
+        }
+
+        .reviews_details_box_text::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            bottom: -20px;
+            border: 20px solid transparent; // дорисовка уголочка слева к блоку обязательно через before
+            border-right: 20px solid #ececec;
+            left: -35px;
+            bottom: unset;
+            top: unset;
+            margin-top: 19px;
+        }
+    }
+}
+
+.buy {
+    background-color: $background_white;
+    padding: 50px;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    h2 {
+        flex: 1 100%;
+        @include h2_dark();
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .buy_box {
+        background-color: $background_dark;
+        width: 28%;
+        border-radius: 5px;
+        border: $background_dark solid 1px;
+        align-self: flex-end;
+        height: 100%;
+        padding-bottom: 20px;
+
+        h3 {
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 1.5em;
+            font-weight: 400;
+            line-height: 1.25;
+            text-align: center;
+            background-color: $background_dark;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        span {
+            font-family: Arial;
+            color: #445162;
+            font-size: 2.5em;
+            font-weight: 400;
+            line-height: 0.75;
+            text-align: left;
+            background-color: $background_white;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            width: 100%;
+            padding: 1rem 0;
+        }
+
+        ol {
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 0.875em;
+            font-weight: 400;
+            line-height: 1.714;
+            text-align: left;
+        }
+
+        button {
+            border-radius: 5px;
+            background-color: $background_white;
+            width: 260px;
+            height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+footer {
+    display: block;
+    background: $background_dark;
+    padding: 50px 220px;
+    height: 100%;
+    overflow: auto;
+
+    h2 {
+        @include h2_white();
+        margin-top: 0;
+        text-align: center;
+    }
+
+    form {
+        float: left;
+        display: block;
+        width: 62%;
+
+        .inf_person {
+            border-radius: 5px;
+            width: 500px;
+            height: 40px;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        textarea {
+            border-radius: 5px;
+            background-color: #ffffff;
+            width: 500px;
+            height: 170px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        button {
+            border-radius: 5px;
+            background-color: #ffffff;
+            width: 140px;
+            height: 40px;
+            text-transform: uppercase;
+            font-family: Arial;
+            color: #445162;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-left: 12em;
+            float: left;
+        }
+    }
+
+    address {
+        display: inline-block;
+        margin: 0 0 0 0;
+
+        ul.contacts {
+            list-style: none;
+            display: block;
+            margin-top: 0;
+
+            li {
+                font-family: Arial;
+                color: #ffffff;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: left;
+                margin-bottom: 30px;
+
+                img {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        ul.social {
+            li {
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 3px;
+
+                a {
+                    text-align: left;
+                    text-decoration: none;
+                }
+
+            }
+        }
+    }
+}
+
+p {
+    text-align: center;
+    background-color: #f5f5f5;
+    font-family: Arial;
+    color: #445162;
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    line-height: 2;
+    margin-top: 0;
+}
