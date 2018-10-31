@@ -1,0 +1,67 @@
+.scrinshots {
+  background-color: #ffffff;
+  padding: 3.125rem 0;
+  height: 100%;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scrinshots h2 {
+  font-family: Arial;
+  font-size: 1.875em;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  color: #445161;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+}
+
+.scrinshots figure {
+  display: block;
+  margin-top: 0;
+  margin-left: 0;
+  width: 44%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scrinshots figure img {
+  display: block;
+  margin-right: 0.8rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.scrinshots figure figcaption h3 {
+  color: #445161;
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: left;
+  font-family: Arial;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.scrinshots figure figcaption p {
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: #445161;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=scrinshots.css.map */

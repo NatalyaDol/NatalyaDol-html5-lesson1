@@ -1,0 +1,83 @@
+@import 'font_color';
+.reviews {
+    background-color: #f5f5f5;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    height: 100%;
+    overflow: auto;  //позволяет тянуться в высоту
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    h2 {
+        @include h2_dark();
+        margin-top: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .reviews_details_box {
+        width: 36%;
+        padding: 0 2em 5.5em 1.5em;
+        position: relative;
+
+        .reviews_details_box_img {
+            border-radius: 50%;
+            background-color: $background_dark;
+            width: 5em;
+            height: 5em;
+            float: left;
+        }
+
+        .reviews_details_box_text {
+            position: absolute;
+            left: 7.6em;
+            background-color: #ececec;
+            border-radius: 5px;
+            padding-left: 0.7em;
+            padding-right: inherit;
+
+            h4 {
+                font-family: Arial;
+                color: #989898;
+                font-size: 0.875em;
+                font-weight: 400;
+                line-height: 1.286;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-family: Arial;
+                background-color: #ececec;
+                color: $background_dark;
+                font-size: 0.875em;
+                font-style: italic;
+                line-height: 1.286;
+                text-align: left;
+            }
+        }
+
+        .block {
+            background: green;
+            border-radius: 10px;
+            padding: 1em;
+            position: relative;
+            color: #fff;
+        }
+
+        .reviews_details_box_text::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            bottom: -20px;
+            border: 20px solid transparent; // дорисовка уголочка слева к блоку обязательно через before
+            border-right: 20px solid #ececec;
+            left: -35px;
+            bottom: unset;
+            top: unset;
+            margin-top: 19px;
+        }
+    }
+}

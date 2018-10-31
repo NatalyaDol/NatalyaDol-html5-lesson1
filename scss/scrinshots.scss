@@ -1,0 +1,52 @@
+@import 'font_color';
+.scrinshots {
+    background-color: $background_white;
+    padding: 3.125rem 0;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+    h2 {
+        @include h2_dark();
+        text-align: center;
+        flex: 1 100%;
+    }
+    
+    figure {
+        display: block;
+        margin-top: 0;
+        margin-left: 0;
+        width: 44%;
+        display: flex;
+
+        img {
+            display: block;
+            margin-right: 0.8rem;
+            height:auto;
+            object-fit: contain;  // сохранение пропорций
+        }
+
+        figcaption {
+            h3 {
+                @include h3_dark();
+                margin: 0;
+                margin-bottom: 0.5rem;
+                
+            }
+
+            p {
+                font-family: Arial;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: left;
+                color: $background_dark;
+                background-color: $background_white;
+            }
+        }
+    }
+}
