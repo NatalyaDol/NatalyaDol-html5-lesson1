@@ -20,25 +20,35 @@ footer {
         display: block;
         width: 44%;
 
-        .inf_person {
-            border-radius: 5px;
-            width: 100%;
-            height: 2.5em;
-            background-color: #ffffff;
-            margin-bottom: 1em;
+        .inf_person,
+        textarea {
+            color: $background_dark;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 1.1em;
             padding-left: 0.9em;
             outline: none;
+            border-radius: 5px;
+            width: 100%;
+            background-color: #ffffff;
+            color: $background_dark;
+        }
+
+        .inf_person {
+            height: 2.5em;
         }
 
         textarea {
-            border-radius: 5px;
-            background-color: #ffffff;
-            width: 100%;
             height: 11em;
-            margin-bottom: 1.1em;
-            padding-left: 0.9em;
             padding-top: 0.9em;
-            outline: none;
+            resize: none;
+        }
+
+        .inf_person:focus,
+        textarea:focus {
+            background-color: rgba(192, 188, 188, 0.452); 
+            color: #ffffff;
         }
     }
 

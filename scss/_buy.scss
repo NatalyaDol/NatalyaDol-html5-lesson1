@@ -26,6 +26,24 @@
         height: 100%;
         padding-bottom: 1rem;
 
+        button {
+            display: block;
+            border-radius: 5px;
+            background-color: #ffffff;
+            width: 80%;
+            text-transform: uppercase;
+            font-family: Arial;
+            color: #445162;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 2.5;
+            margin: 0 auto;
+            float: left;
+            outline: none;
+            min-width: 4em;
+            margin-left: 10%;
+        }
+
         h3 {
             font-family: Arial;
             color: #ffffff;

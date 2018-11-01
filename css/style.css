@@ -334,6 +334,30 @@ header .img_product {
   margin-top: 19px;
 }
 
+button {
+  display: block;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 40%;
+  text-transform: uppercase;
+  font-family: Arial;
+  color: #445162;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 2.5;
+  margin: 0 auto;
+  float: left;
+  outline: none;
+  min-width: 4em;
+  margin-left: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 102px 0px #445161;
+  box-shadow: inset 0px 0px 102px 0px #445161;
+}
+
 .buy {
   background-color: #ffffff;
   padding: 3.125rem;
@@ -377,6 +401,24 @@ header .img_product {
   padding-bottom: 1rem;
 }
 
+.buy .buy_box button {
+  display: block;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 80%;
+  text-transform: uppercase;
+  font-family: Arial;
+  color: #445162;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 2.5;
+  margin: 0 auto;
+  float: left;
+  outline: none;
+  min-width: 4em;
+  margin-left: 10%;
+}
+
 .buy .buy_box h3 {
   font-family: Arial;
   color: #ffffff;
@@ -413,24 +455,25 @@ header .img_product {
   text-align: left;
 }
 
-.buy .buy_box button {
+button {
+  display: block;
   border-radius: 5px;
   background-color: #ffffff;
-  width: 80%;
-  height: 2.5rem;
-  text-align: center;
+  width: 40%;
   text-transform: uppercase;
-  margin: 0 auto;
-  display: block;
-  outline: none;
   font-family: Arial;
-  color: #445161;
-  font-size: 1.125em;
+  color: #445162;
+  font-size: 1em;
   font-weight: 700;
-  line-height: 1;
+  line-height: 2.5;
+  margin: 0 auto;
+  float: left;
+  outline: none;
+  min-width: 4em;
+  margin-left: 30%;
 }
 
-.buy .buy_box button:hover {
+button:hover {
   cursor: pointer;
   -webkit-box-shadow: inset 0px 0px 102px 0px #445161;
   box-shadow: inset 0px 0px 102px 0px #445161;
@@ -467,49 +510,35 @@ footer form {
   width: 44%;
 }
 
-footer form .inf_person {
-  border-radius: 5px;
-  width: 100%;
-  height: 2.5em;
-  background-color: #ffffff;
-  margin-bottom: 1em;
+footer form .inf_person,
+footer form textarea {
+  color: #445161;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.1em;
   padding-left: 0.9em;
   outline: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #445161;
+}
+
+footer form .inf_person {
+  height: 2.5em;
 }
 
 footer form textarea {
-  border-radius: 5px;
-  background-color: #ffffff;
-  width: 100%;
   height: 11em;
-  margin-bottom: 1.1em;
-  padding-left: 0.9em;
   padding-top: 0.9em;
-  outline: none;
+  resize: none;
 }
 
-footer form button {
-  display: block;
-  border-radius: 5px;
-  background-color: #ffffff;
-  width: 40%;
-  text-transform: uppercase;
-  font-family: Arial;
-  color: #445162;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 2.5;
-  margin: 0 auto;
-  float: left;
-  outline: none;
-  min-width: 4em;
-  margin-left: 30%;
-}
-
-footer form button:hover {
-  cursor: pointer;
-  -webkit-box-shadow: inset 0px 0px 102px 0px #445161;
-  box-shadow: inset 0px 0px 102px 0px #445161;
+footer form .inf_person:focus,
+footer form textarea:focus {
+  background-color: rgba(192, 188, 188, 0.452);
+  color: #ffffff;
 }
 
 footer address {
@@ -595,6 +624,30 @@ p.copyright {
   letter-spacing: 0.025em;
   line-height: 2;
   margin: 0;
+}
+
+button {
+  display: block;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 40%;
+  text-transform: uppercase;
+  font-family: Arial;
+  color: #445162;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 2.5;
+  margin: 0 auto;
+  float: left;
+  outline: none;
+  min-width: 4em;
+  margin-left: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 102px 0px #445161;
+  box-shadow: inset 0px 0px 102px 0px #445161;
 }
 
 .container {
