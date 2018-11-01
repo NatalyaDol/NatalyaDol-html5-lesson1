@@ -423,6 +423,11 @@ header .img_product {
   margin: 0 auto;
   display: block;
   outline: none;
+  font-family: Arial;
+  color: #445161;
+  font-size: 1.125em;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .buy .buy_box button:hover {

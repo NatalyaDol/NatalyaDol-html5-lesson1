@@ -1,0 +1,25 @@
+@import 'font_color';
+button {
+    display: block;
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 40%;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: #445162;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 2.5;
+    margin: 0 auto;
+    float: left;
+    outline: none;
+    min-width: 4em;
+    margin-left: 30%;
+}
+
+button:hover {
+    cursor: pointer;
+    -webkit-box-shadow: inset 0px 0px 102px 0px rgba(68, 81, 97, 1);
+    -moz-box-shadow: inset 0px 0px 102px 0px rgba(68, 81, 97, 1);
+    box-shadow: inset 0px 0px 102px 0px rgba(68, 81, 97, 1);
+}
